@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Inter:wght@400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background: #050505;
+  color: #F5F5F5;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow-x: hidden;
+}
+
+::selection { background: rgba(255,77,0,0.35); color: #F5F5F5; }
+
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #1a1a1a; }
+
+/* ── Noise overlay ──────────────────────────────────────────────────── */
+.noise-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* ── CTA pulse glow ─────────────────────────────────────────────────── */
+@keyframes pulse-cta {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 0, 0.55),
+                0 0 14px 0 rgba(255, 77, 0, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 77, 0, 0),
+                0 0 28px 4px rgba(255, 77, 0, 0.15);
+  }
+}
+.pulse-cta { animation: pulse-cta 2.6s ease-in-out infinite; }
+
+/* ── Section divider line ───────────────────────────────────────────── */
+.night-hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin: 0;
+}
+
+/* ── Ticker tape ────────────────────────────────────────────────────── */
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker-track { animation: ticker 28s linear infinite; }
