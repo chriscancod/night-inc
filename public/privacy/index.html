@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BetterMe Privacy Policy — Night.inc</title>
+<meta name="description" content="Privacy Policy for the BetterMe app by Night.inc" />
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --surface-2: #1A1A1A;
+    --border: #262422;
+    --text: #F2F0EC;
+    --text-sub: #A39C93;
+    --text-mute: #6B6560;
+    --accent: #7F6BFE;
+    --accent-dim: rgba(127,107,254,0.14);
+    --font-body: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  :root[data-theme="light"] {
+    --bg: #FAF9F6;
+    --surface: #FFFFFF;
+    --surface-2: #F2F0EB;
+    --border: #E4E0D8;
+    --text: #211E1A;
+    --text-sub: #635C53;
+    --text-mute: #948C80;
+    --accent: #6650E0;
+    --accent-dim: rgba(102,80,224,0.10);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #FAF9F6;
+      --surface: #FFFFFF;
+      --surface-2: #F2F0EB;
+      --border: #E4E0D8;
+      --text: #211E1A;
+      --text-sub: #635C53;
+      --text-mute: #948C80;
+      --accent: #6650E0;
+      --accent-dim: rgba(102,80,224,0.10);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 120px; }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--text-sub);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--text-sub);
+    max-width: 62ch;
+    margin: 0 0 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-bottom: 56px;
+  }
+  nav.toc a {
+    font-size: 12.5px;
+    color: var(--text-sub);
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: border-color .15s ease, color .15s ease;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible {
+    border-color: var(--accent);
+    color: var(--text);
+    outline: none;
+  }
+
+  section { margin-bottom: 44px; scroll-margin-top: 24px; }
+  section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+  }
+  section h2 .num {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+  section p, section li { color: var(--text-sub); font-size: 15.5px; max-width: 64ch; }
+  section p { margin: 0 0 14px; }
+  section ul { margin: 0 0 14px; padding-left: 20px; }
+  section li { margin-bottom: 8px; }
+  section strong { color: var(--text); font-weight: 600; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 0 0 16px;
+  }
+  .card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 4px;
+  }
+  .card-desc { font-size: 13.5px; color: var(--text-mute); margin: 0; }
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .grid-cards .card { margin-bottom: 0; }
+
+  .pill {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-mute);
+  }
+  footer a { color: var(--text-sub); }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 48px 18px 90px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Night.inc &middot; BetterMe</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective July 22, 2026</p>
+  <p class="lede">
+    BetterMe is built to run almost entirely on your device. This page explains,
+    plainly, what the app can access, what actually leaves your phone, and what
+    never does.
+  </p>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#overview">Overview</a>
+    <a href="#profile">Profile &amp; onboarding</a>
+    <a href="#health">Health data</a>
+    <a href="#camera">Camera &amp; photos</a>
+    <a href="#content">Your content &amp; AI features</a>
+    <a href="#notifications">Notifications</a>
+    <a href="#sharing">Sharing &amp; sale</a>
+    <a href="#retention">Retention &amp; deletion</a>
+    <a href="#security">Security</a>
+    <a href="#children">Children</a>
+    <a href="#changes">Changes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p>
+      BetterMe has no account system &mdash; no email, no password, no sign-in.
+      There is nothing to hack because there's no central database of users to
+      begin with. Your goals, habits, journal entries, meals, and style catalog
+      live in local storage on your device. A small number of features send a
+      request to our own backend server to generate an AI response &mdash; those
+      are called out explicitly below, and nothing else leaves your phone.
+    </p>
+  </section>
+
+  <section id="profile">
+    <h2><span class="num">02</span> Profile &amp; onboarding</h2>
+    <p>
+      During setup you can optionally enter your name, age, school/grade, sex,
+      height, weight, activity level, business or goals you're working toward,
+      and a daily schedule. This is stored locally on your device using
+      standard iOS storage (UserDefaults and SwiftData) and is used only to
+      personalize the app &mdash; calculating calorie targets, generating an AI
+      schedule, tailoring the AI coach's tone. None of it is transmitted to us
+      as an identity or account record.
+    </p>
+  </section>
+
+  <section id="health">
+    <h2><span class="num">03</span> Health data</h2>
+    <span class="pill">Read-only</span>
+    <p>
+      If you grant HealthKit access, BetterMe reads your step count, active
+      energy, resting heart rate, and heart-rate variability to power the
+      Kinetic dashboard. The app requests <strong>read-only</strong> access
+      &mdash; it does not write workouts, body metrics, or anything else back
+      to Apple Health. Health data is used entirely on-device and is never
+      transmitted to our servers or anyone else's.
+    </p>
+  </section>
+
+  <section id="camera">
+    <h2><span class="num">04</span> Camera &amp; photos</h2>
+    <p>
+      Wardrobe can use your camera to scan clothing items and your photo
+      library to add existing photos. Images are analyzed on-device (Apple's
+      Vision framework identifies dominant colors and item type) to catalog
+      the piece. Photos you save stay in the app's local storage on your
+      device.
+    </p>
+  </section>
+
+  <section id="content">
+    <h2><span class="num">05</span> Your content &amp; AI features</h2>
+    <p>
+      Journal entries, logged meals and workouts, habits, and closet items are
+      stored locally. A few features are AI-powered and work by sending a
+      request to our backend (hosted on Railway) to generate a response:
+    </p>
+    <div class="grid-cards">
+      <div class="card">
+        <p class="card-title">AI Coach chat</p>
+        <p class="card-desc">Your message and recent conversation history are sent to generate a reply.</p>
+      </div>
+      <div class="card">
+        <p class="card-title">AI schedule builder</p>
+        <p class="card-desc">Your stated goals, wake/sleep times, and tasks are sent to generate a daily plan.</p>
+      </div>
+      <div class="card">
+        <p class="card-title">AI course builder</p>
+        <p class="card-desc">The topic you want to learn is sent to generate lessons and exercises.</p>
+      </div>
+      <div class="card">
+        <p class="card-title">AI outfit &amp; workout generation</p>
+        <p class="card-desc">A description of your items or preferences is sent to generate a suggestion.</p>
+      </div>
+    </div>
+    <p>
+      These requests are used solely to generate the response shown to you.
+      We do not use this content for advertising, and we do not sell it. We
+      do not tie these requests to any account, since none exists.
+    </p>
+  </section>
+
+  <section id="notifications">
+    <h2><span class="num">06</span> Notifications</h2>
+    <p>
+      Reminders (like a streak-at-risk nudge) are scheduled locally on your
+      device using iOS's notification system. BetterMe does not operate a
+      push-notification server and cannot send you a message remotely.
+    </p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">07</span> Sharing &amp; sale of data</h2>
+    <p>
+      We do not sell your data. We do not share it with advertisers, and
+      BetterMe does not embed third-party analytics or advertising SDKs. The
+      only outside party involved is our own backend (for the AI features
+      above) and, if you use Wardrobe's redeem-code feature, a separate
+      Night.inc service that validates purchase codes from 2AM.
+    </p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">08</span> Retention &amp; deletion</h2>
+    <p>
+      Because almost everything lives on your device, deleting the app
+      deletes your data. There's no server-side account to separately close.
+      If you'd like us to confirm deletion of anything transmitted through an
+      AI request (which we do not retain beyond generating the response), you
+      can reach out using the contact info below.
+    </p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">09</span> Security</h2>
+    <p>
+      All network requests use HTTPS. Local data is protected by the same
+      encryption and sandboxing every iOS app relies on. No method of storage
+      or transmission is 100% secure, and we can't guarantee absolute
+      security, but we don't ask you to trust a central database with your
+      information in the first place.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">10</span> Children's privacy</h2>
+    <p>
+      BetterMe is not directed at children under 13, and we do not knowingly
+      collect personal information from children under 13. If you believe a
+      child has provided us information through the app's AI features,
+      contact us and we'll address it.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">11</span> Changes to this policy</h2>
+    <p>
+      If this policy changes in a way that affects what data the app
+      accesses or how it's used, we'll update the effective date above and,
+      for material changes, note it in the app.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">12</span> Contact</h2>
+    <p>
+      Questions about this policy or your data: <a href="mailto:chrisclm713@gmail.com">chrisclm713@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 Night.inc. BetterMe.
+    <span style="display:block; margin-top:6px;">See also the <a href="/terms/">Terms of Use</a>. &middot; <a href="/">Night.inc</a></span>
+  </footer>
+</div>
+</body>
+</html>

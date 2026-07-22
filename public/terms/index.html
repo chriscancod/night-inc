@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BetterMe Terms of Use — Night.inc</title>
+<meta name="description" content="Terms of Use for the BetterMe app by Night.inc" />
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --surface-2: #1A1A1A;
+    --border: #262422;
+    --text: #F2F0EC;
+    --text-sub: #A39C93;
+    --text-mute: #6B6560;
+    --accent: #7F6BFE;
+    --accent-dim: rgba(127,107,254,0.14);
+    --font-body: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  :root[data-theme="light"] {
+    --bg: #FAF9F6;
+    --surface: #FFFFFF;
+    --surface-2: #F2F0EB;
+    --border: #E4E0D8;
+    --text: #211E1A;
+    --text-sub: #635C53;
+    --text-mute: #948C80;
+    --accent: #6650E0;
+    --accent-dim: rgba(102,80,224,0.10);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #FAF9F6;
+      --surface: #FFFFFF;
+      --surface-2: #F2F0EB;
+      --border: #E4E0D8;
+      --text: #211E1A;
+      --text-sub: #635C53;
+      --text-mute: #948C80;
+      --accent: #6650E0;
+      --accent-dim: rgba(102,80,224,0.10);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 120px; }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--text-sub);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--text-sub);
+    max-width: 62ch;
+    margin: 0 0 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-bottom: 56px;
+  }
+  nav.toc a {
+    font-size: 12.5px;
+    color: var(--text-sub);
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: border-color .15s ease, color .15s ease;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible {
+    border-color: var(--accent);
+    color: var(--text);
+    outline: none;
+  }
+
+  section { margin-bottom: 44px; scroll-margin-top: 24px; }
+  section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+  }
+  section h2 .num {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+  section p, section li { color: var(--text-sub); font-size: 15.5px; max-width: 64ch; }
+  section p { margin: 0 0 14px; }
+  section ul { margin: 0 0 14px; padding-left: 20px; }
+  section li { margin-bottom: 8px; }
+  section strong { color: var(--text); font-weight: 600; }
+
+  .callout {
+    background: var(--accent-dim);
+    border: 1px solid rgba(127,107,254,0.3);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 0 0 16px;
+  }
+  .callout p { color: var(--text); margin: 0; font-size: 14.5px; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-mute);
+  }
+  footer a { color: var(--text-sub); }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 48px 18px 90px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Night.inc &middot; BetterMe</p>
+  <h1>Terms of Use</h1>
+  <p class="meta">Effective July 22, 2026</p>
+  <p class="lede">
+    The short version: BetterMe is a personal productivity and self-improvement
+    tool. Use it for yourself, don't abuse the AI features, and understand that
+    it's a coach, not a doctor.
+  </p>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#acceptance">Acceptance</a>
+    <a href="#service">The service</a>
+    <a href="#eligibility">Eligibility</a>
+    <a href="#content">Your content</a>
+    <a href="#ai">AI features</a>
+    <a href="#conduct">Acceptable use</a>
+    <a href="#store">2AM &amp; third parties</a>
+    <a href="#disclaimer">Disclaimer</a>
+    <a href="#liability">Liability</a>
+    <a href="#termination">Termination</a>
+    <a href="#changes">Changes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="acceptance">
+    <h2><span class="num">01</span> Acceptance</h2>
+    <p>
+      By downloading or using BetterMe, you agree to these terms. If you
+      don't agree, don't use the app. These terms apply alongside Apple's
+      standard End User License Agreement, which also governs your use of
+      the app.
+    </p>
+  </section>
+
+  <section id="service">
+    <h2><span class="num">02</span> The service</h2>
+    <p>
+      BetterMe (by Night.inc) is a life-organization app with six modules:
+      Apex (goals and habits), Aura (mind and mood), Nexus (business
+      tracking), Wardrobe (clothing catalog and outfit generation), Kinetic
+      (fitness and nutrition), and Index (self-guided learning). The app is
+      free to use. Some features send requests to our backend to generate
+      AI-powered responses (schedules, chat replies, generated workouts,
+      outfits, and lessons).
+    </p>
+  </section>
+
+  <section id="eligibility">
+    <h2><span class="num">03</span> Eligibility</h2>
+    <p>
+      BetterMe is intended for a general audience and is not directed at
+      children under 13. If you're under the age of majority where you
+      live, you should have a parent or guardian's permission to use it.
+    </p>
+  </section>
+
+  <section id="content">
+    <h2><span class="num">04</span> Your content</h2>
+    <p>
+      Everything you enter &mdash; journal entries, goals, logged meals and
+      workouts, closet items, chat messages &mdash; is yours. It's stored
+      locally on your device; we don't claim ownership over it. You're
+      responsible for what you enter, including keeping backups, since
+      deleting the app deletes locally-stored data with it.
+    </p>
+  </section>
+
+  <section id="ai">
+    <h2><span class="num">05</span> AI features</h2>
+    <div class="callout">
+      <p>
+        AI-generated schedules, coaching replies, workouts, and lessons are
+        starting points, not professional advice. BetterMe's AI Coach is
+        not a substitute for a doctor, therapist, registered dietitian,
+        certified trainer, financial advisor, or any other licensed
+        professional. Use your judgment, especially around health, fitness,
+        and financial decisions.
+      </p>
+    </div>
+    <p>
+      AI responses can be wrong, outdated, or not suited to your specific
+      situation. Don't rely on them for anything where being wrong could
+      cause real harm &mdash; check with a qualified professional first.
+    </p>
+  </section>
+
+  <section id="conduct">
+    <h2><span class="num">06</span> Acceptable use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the AI features to generate content that's illegal, harassing, or intended to harm someone.</li>
+      <li>Attempt to abuse, overload, or extract data from our backend beyond normal app use.</li>
+      <li>Reverse-engineer the app to bypass how it's intended to work.</li>
+      <li>Use BetterMe in any way that violates applicable law.</li>
+    </ul>
+  </section>
+
+  <section id="store">
+    <h2><span class="num">07</span> 2AM &amp; third-party links</h2>
+    <p>
+      Wardrobe's redeem-code feature and Apex's streak rewards can link out
+      to 2AM (noctis.fit), a separate Night.inc storefront. Purchases you
+      make there are governed by that store's own terms, not this
+      agreement. We're not responsible for third-party sites you reach
+      through links in the app.
+    </p>
+  </section>
+
+  <section id="disclaimer">
+    <h2><span class="num">08</span> Disclaimer</h2>
+    <p>
+      BetterMe is provided "as is," without warranties of any kind, whether
+      express or implied. We don't guarantee the app will be uninterrupted,
+      error-free, or that AI-generated content will be accurate.
+    </p>
+  </section>
+
+  <section id="liability">
+    <h2><span class="num">09</span> Limitation of liability</h2>
+    <p>
+      To the maximum extent permitted by law, Night.inc is not liable for
+      any indirect, incidental, or consequential damages arising from your
+      use of the app, including decisions made based on AI-generated
+      content.
+    </p>
+  </section>
+
+  <section id="termination">
+    <h2><span class="num">10</span> Termination</h2>
+    <p>
+      You can stop using BetterMe any time by deleting the app. We may
+      discontinue or modify the app or its backend features at any time.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">11</span> Changes to these terms</h2>
+    <p>
+      We may update these terms as the app changes. Continuing to use
+      BetterMe after an update means you accept the revised terms.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">12</span> Contact</h2>
+    <p>
+      Questions about these terms: <a href="mailto:chrisclm713@gmail.com">chrisclm713@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 Night.inc. BetterMe.
+    <span style="display:block; margin-top:6px;">See also the <a href="/privacy/">Privacy Policy</a>. &middot; <a href="/">Night.inc</a></span>
+  </footer>
+</div>
+</body>
+</html>
