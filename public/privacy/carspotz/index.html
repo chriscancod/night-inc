@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CarSpotz Privacy Policy — Night.inc</title>
+<meta name="description" content="Privacy Policy for the CarSpotz app by Night.inc" />
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --surface-2: #1A1A1A;
+    --border: #262422;
+    --text: #F2F0EC;
+    --text-sub: #A39C93;
+    --text-mute: #6B6560;
+    --accent: #7F6BFE;
+    --accent-dim: rgba(127,107,254,0.14);
+    --font-body: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  :root[data-theme="light"] {
+    --bg: #FAF9F6;
+    --surface: #FFFFFF;
+    --surface-2: #F2F0EB;
+    --border: #E4E0D8;
+    --text: #211E1A;
+    --text-sub: #635C53;
+    --text-mute: #948C80;
+    --accent: #6650E0;
+    --accent-dim: rgba(102,80,224,0.10);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #FAF9F6;
+      --surface: #FFFFFF;
+      --surface-2: #F2F0EB;
+      --border: #E4E0D8;
+      --text: #211E1A;
+      --text-sub: #635C53;
+      --text-mute: #948C80;
+      --accent: #6650E0;
+      --accent-dim: rgba(102,80,224,0.10);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 120px; }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--text-sub);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--text-sub);
+    max-width: 62ch;
+    margin: 0 0 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-bottom: 56px;
+  }
+  nav.toc a {
+    font-size: 12.5px;
+    color: var(--text-sub);
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: border-color .15s ease, color .15s ease;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible {
+    border-color: var(--accent);
+    color: var(--text);
+    outline: none;
+  }
+
+  section { margin-bottom: 44px; scroll-margin-top: 24px; }
+  section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+  }
+  section h2 .num {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+  section p, section li { color: var(--text-sub); font-size: 15.5px; max-width: 64ch; }
+  section p { margin: 0 0 14px; }
+  section ul { margin: 0 0 14px; padding-left: 20px; }
+  section li { margin-bottom: 8px; }
+  section strong { color: var(--text); font-weight: 600; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 0 0 16px;
+  }
+  .card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0 0 4px;
+  }
+  .card-desc { font-size: 13.5px; color: var(--text-mute); margin: 0; }
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .grid-cards .card { margin-bottom: 0; }
+
+  .pill {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-mute);
+  }
+  footer a { color: var(--text-sub); }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 48px 18px 90px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Night.inc &middot; CarSpotz</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective October 3, 2026</p>
+  <p class="lede">CarSpotz is a car-spotting game. This page explains plainly what the app can access, what is sent to our server, and what stays on your phone.</p>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#overview">Overview</a>
+    <a href="#camera">Camera &amp; photos</a>
+    <a href="#location">Location</a>
+    <a href="#leaderboard">Leaderboard, meets &amp; catalog</a>
+    <a href="#ads">Ads</a>
+    <a href="#sharing">Sharing &amp; sale of data</a>
+    <a href="#retention">Retention &amp; deletion</a>
+    <a href="#security">Security</a>
+    <a href="#children">Children&rsquo;s privacy</a>
+    <a href="#changes">Changes to this policy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p>CarSpotz has no accounts &mdash; no email, no password, no sign-in. You are identified only by a random device ID and, if you choose one, a leaderboard handle. Your collection and spot photos are stored on your phone. A few features send data to our server, and the free app shows ads from Google AdMob. All of it is listed below.</p>
+  </section>
+
+  <section id="camera">
+    <h2><span class="num">02</span> Camera &amp; photos</h2>
+    <p>CarSpotz uses your camera to photograph cars you spot. <strong>License plates are blurred on your phone</strong> before the photo is used. To identify the car, the blurred photo is sent to our server (hosted on Railway) and then to an AI service, which returns the make, model, year range and body style. We do not keep the photo on our server; we record only your anonymous device ID and whether the photo showed a car. Photos of your spots are saved on your phone, in the app's own storage. If you add a photo from your library, the same process applies.</p>
+  </section>
+
+  <section id="location">
+    <h2><span class="num">03</span> Location</h2>
+    <p>If you allow location, CarSpotz uses it to show nearby car meets and to pin your spots on a map. Spot locations are <strong>blurred to a rough area (about 500 meters)</strong> before they are saved or sent, never your exact position. You can turn location off at any time in iPhone Settings.</p>
+  </section>
+
+  <section id="leaderboard">
+    <h2><span class="num">04</span> Leaderboard, meets &amp; catalog</h2>
+    <p>If you pick a handle, your device ID, handle, XP, spot count and level are sent to our server for the leaderboard. <strong>Handles appear publicly on the leaderboard</strong>, so don't use your real name. The monthly top spotters may receive a discount code for the 2AM store. If you add a car to the catalog or post a car meet, the details you enter (such as make, model, year range, or meet time and place) are sent to our server, and meet listings can be seen by other users. Please don't post personal information in a meet.</p>
+  </section>
+
+  <section id="ads">
+    <h2><span class="num">05</span> Ads</h2>
+    <p>CarSpotz is free and shows ads through <strong>Google AdMob</strong>. We set ads to <strong>non-personalized</strong> and treat the app as child-directed for ad purposes, so ads are not chosen from your activity across other apps and websites, and CarSpotz does not ask permission to track you. Google may still collect technical information such as device type, operating system, IP address, and how ads perform in order to deliver ads and prevent fraud. See Google's privacy policy for how it handles that information.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">06</span> Sharing &amp; sale of data</h2>
+    <p>We do not sell your data and we do not track you across other companies' apps or websites. The outside parties involved are: our hosting provider (Railway) and AI service provider, to identify cars; Google AdMob, for ads; and Apple, for the App Store and the app itself. We may disclose information if the law requires it.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">07</span> Retention &amp; deletion</h2>
+    <p>Your collection and photos live on your phone, and deleting the app removes them. Leaderboard entries stay while the leaderboard runs, or until you ask us to remove them. Our server keeps ordinary technical logs (such as IP address and request time) for security and troubleshooting. To ask us to remove your leaderboard entry or anything else tied to your device ID, contact us below.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">08</span> Security</h2>
+    <p>All network requests use HTTPS. No method of storage or transmission is 100% secure, and we can't guarantee absolute security.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">09</span> Children&rsquo;s privacy</h2>
+    <p>CarSpotz is meant for teens and adults and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has given us information, contact us and we'll delete it. Please only photograph cars from a safe place, and never use the app while driving.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">10</span> Changes to this policy</h2>
+    <p>If this policy changes in a way that affects what data the app accesses or how it is used, we'll update the effective date above and, for material changes, note it in the app.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span> Contact</h2>
+    <p>Questions about this policy or your data: <a href="mailto:chrisclm713@gmail.com">chrisclm713@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2026 Night.inc. CarSpotz.
+    <span style="display:block; margin-top:6px;">See also the <a href="/privacy/">Bettermade Privacy Policy</a> &middot; <a href="/terms/">Terms of Use</a> &middot; <a href="/">Night.inc</a></span>
+  </footer>
+</div>
+</body>
+</html>
