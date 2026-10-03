@@ -182,7 +182,7 @@
 <div class="wrap">
   <p class="eyebrow">Night.inc &middot; Bettermade</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective July 22, 2026</p>
+  <p class="meta">Effective October 3, 2026</p>
   <p class="lede">
     Bettermade is built to run almost entirely on your device. This page explains,
     plainly, what the app can access, what actually leaves your phone, and what
@@ -195,7 +195,9 @@
     <a href="#health">Health data</a>
     <a href="#camera">Camera &amp; photos</a>
     <a href="#content">Your content &amp; AI features</a>
+    <a href="#voice">Mic &amp; Face ID</a>
     <a href="#notifications">Notifications</a>
+    <a href="#ads">Ads</a>
     <a href="#sharing">Sharing &amp; sale</a>
     <a href="#retention">Retention &amp; deletion</a>
     <a href="#security">Security</a>
@@ -208,11 +210,11 @@
     <h2><span class="num">01</span> Overview</h2>
     <p>
       Bettermade has no account system &mdash; no email, no password, no sign-in.
-      There is nothing to hack because there's no central database of users to
-      begin with. Your goals, habits, journal entries, meals, and style catalog
+      We don't keep a database of users. Your goals, habits, journal entries, meals, and style catalog
       live in local storage on your device. A small number of features send a
       request to our own backend server to generate an AI response &mdash; those
-      are called out explicitly below, and nothing else leaves your phone.
+      are called out explicitly below. The free app also shows ads from Google
+      AdMob, described in the Ads section.
     </p>
   </section>
 
@@ -234,7 +236,7 @@
     <span class="pill">Read-only</span>
     <p>
       If you grant HealthKit access, Bettermade reads your step count, active
-      energy, resting heart rate, and heart-rate variability to power the
+      energy, resting heart rate, heart-rate variability, sleep, and workouts to power the
       Kinetic dashboard. The app requests <strong>read-only</strong> access
       &mdash; it does not write workouts, body metrics, or anything else back
       to Apple Health. Health data is used entirely on-device and is never
@@ -245,11 +247,12 @@
   <section id="camera">
     <h2><span class="num">04</span> Camera &amp; photos</h2>
     <p>
-      Wardrobe can use your camera to scan clothing items and your photo
-      library to add existing photos. Images are analyzed on-device (Apple's
-      Vision framework identifies dominant colors and item type) to catalog
-      the piece. Photos you save stay in the app's local storage on your
-      device.
+      Wardrobe can use your camera to scan clothing items, Kinetic can use it to
+      photograph food, and you can add existing photos from your photo library or take
+      progress photos. Clothing photos are analyzed on-device (Apple's Vision framework
+      identifies dominant colors and item type). Photos you save stay in the app's local
+      storage on your device. If you use the food-photo estimate, that photo is sent to our
+      backend and an AI service to produce the estimate.
     </p>
   </section>
 
@@ -274,19 +277,33 @@
         <p class="card-desc">The topic you want to learn is sent to generate lessons and exercises.</p>
       </div>
       <div class="card">
+        <p class="card-title">Food photo estimate</p>
+        <p class="card-desc">The photo you take of a meal is sent to estimate its nutrition.</p>
+      </div>
+      <div class="card">
         <p class="card-title">AI outfit &amp; workout generation</p>
         <p class="card-desc">A description of your items or preferences is sent to generate a suggestion.</p>
       </div>
     </div>
     <p>
-      These requests are used solely to generate the response shown to you.
-      We do not use this content for advertising, and we do not sell it. We
-      do not tie these requests to any account, since none exists.
+      Our backend passes these requests to an AI service provider only to produce
+      the response shown to you. We do not use this content for advertising, and we do not
+      sell it. We do not tie these requests to any account, since none exists.
+    </p>
+  </section>
+
+  <section id="voice">
+    <h2><span class="num">06</span> Microphone, speech &amp; Face ID</h2>
+    <p>
+      Speaking practice in Learning uses the microphone and Apple's speech recognition,
+      configured to transcribe on your device, to give you feedback. Recordings are not sent to
+      us. Face ID is used only to lock your private profile vault on your phone; we never receive
+      your biometric data.
     </p>
   </section>
 
   <section id="notifications">
-    <h2><span class="num">06</span> Notifications</h2>
+    <h2><span class="num">07</span> Notifications</h2>
     <p>
       Reminders (like a streak-at-risk nudge) are scheduled locally on your
       device using iOS's notification system. Bettermade does not operate a
@@ -294,30 +311,45 @@
     </p>
   </section>
 
-  <section id="sharing">
-    <h2><span class="num">07</span> Sharing &amp; sale of data</h2>
+  <section id="ads">
+    <h2><span class="num">08</span> Ads</h2>
     <p>
-      We do not sell your data. We do not share it with advertisers, and
-      Bettermade does not embed third-party analytics or advertising SDKs. The
-      only outside party involved is our own backend (for the AI features
-      above) and, if you use Wardrobe's redeem-code feature, a separate
-      Night.inc service that validates purchase codes from 2AM.
+      Bettermade is free and shows ads through <strong>Google AdMob</strong>. We set ads to
+      <strong>non-personalized</strong> and treat the app as child-directed for ad purposes, so ads are
+      not chosen from your activity across other apps and websites, and Bettermade does not ask
+      permission to track you. Google may still collect technical information such as device
+      type, operating system, IP address, and how ads perform in order to deliver ads and prevent
+      fraud. See Google's privacy policy for how it handles that information.
+    </p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">09</span> Sharing &amp; sale of data</h2>
+    <p>
+      We do not sell your data and we do not track you across other companies' apps or websites.
+      The outside parties involved are: our hosting provider (Railway) and AI service provider,
+      for the AI features above; Google AdMob, for ads; Apple, for Health access and the app itself;
+      and, if you use Wardrobe's redeem-code feature, a separate Night.inc service that validates
+      purchase codes from 2AM. Optional usage statistics are off by default and only sent if you
+      turn them on in Settings; they contain an anonymous install ID and which part of the app was
+      used, never your content. We may disclose information if the law requires it.
     </p>
   </section>
 
   <section id="retention">
-    <h2><span class="num">08</span> Retention &amp; deletion</h2>
+    <h2><span class="num">10</span> Retention &amp; deletion</h2>
     <p>
       Because almost everything lives on your device, deleting the app
       deletes your data. There's no server-side account to separately close.
-      If you'd like us to confirm deletion of anything transmitted through an
-      AI request (which we do not retain beyond generating the response), you
-      can reach out using the contact info below.
+      AI requests are used to generate the response and are not tied to a
+      profile of you. Our server keeps ordinary technical logs (such as IP address and request time) for security and
+      troubleshooting. To ask about anything transmitted through an AI request, contact us
+      using the details below.
     </p>
   </section>
 
   <section id="security">
-    <h2><span class="num">09</span> Security</h2>
+    <h2><span class="num">11</span> Security</h2>
     <p>
       All network requests use HTTPS. Local data is protected by the same
       encryption and sandboxing every iOS app relies on. No method of storage
@@ -328,17 +360,17 @@
   </section>
 
   <section id="children">
-    <h2><span class="num">10</span> Children's privacy</h2>
+    <h2><span class="num">12</span> Children's privacy</h2>
     <p>
-      Bettermade is not directed at children under 13, and we do not knowingly
-      collect personal information from children under 13. If you believe a
+      Bettermade is meant for teens and adults and is not directed at children under 13.
+      We do not knowingly collect personal information from children under 13. If you believe a
       child has provided us information through the app's AI features,
       contact us and we'll address it.
     </p>
   </section>
 
   <section id="changes">
-    <h2><span class="num">11</span> Changes to this policy</h2>
+    <h2><span class="num">13</span> Changes to this policy</h2>
     <p>
       If this policy changes in a way that affects what data the app
       accesses or how it's used, we'll update the effective date above and,
@@ -347,7 +379,7 @@
   </section>
 
   <section id="contact">
-    <h2><span class="num">12</span> Contact</h2>
+    <h2><span class="num">14</span> Contact</h2>
     <p>
       Questions about this policy or your data: <a href="mailto:chrisclm713@gmail.com">chrisclm713@gmail.com</a>
     </p>
